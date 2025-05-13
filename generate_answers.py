@@ -4,8 +4,6 @@ import openai
 from fpdf import FPDF
 
 # 🔑 Set your OpenAI API key here or use an environment variable
-openai.api_key = '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'
-
 def generate_answer(question):
     try:
         response = openai.chat.completions.create(
